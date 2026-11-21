@@ -1,0 +1,88 @@
+{
+  "versiones": {
+    "modelo": "@cf/baai/bge-m3",
+    "chunking": "chunking-v1"
+  },
+  "generada": "2026-11-20T01:04:18.287Z",
+  "set_version": 1,
+  "consultas": [
+    {
+      "id": "q-hack-completa",
+      "ids": [
+        "4a027bea-109e-883f-8d8d-e20a4661d88d",
+        "4037c74d-5e9a-846c-a78d-9fed2e0a9d49",
+        "473041e5-8cd5-8bc5-9389-eef4c22c03df",
+        "1ff8dd3a-cc0e-8a5a-9f9b-beef09d0712a",
+        "a136fccb-0d65-82b7-b5c8-1cf8db492fb2"
+      ],
+      "similitudes": [
+        0.41221154,
+        0.35670424,
+        0.34805888,
+        0.33519375,
+        0.33493707
+      ]
+    },
+    {
+      "id": "q-hack-corta",
+      "ids": [
+        "4a027bea-109e-883f-8d8d-e20a4661d88d",
+        "473041e5-8cd5-8bc5-9389-eef4c22c03df",
+        "4037c74d-5e9a-846c-a78d-9fed2e0a9d49",
+        "37b01dfd-2928-8124-bdff-89d7788ea5cd",
+        "a136fccb-0d65-82b7-b5c8-1cf8db492fb2"
+      ],
+      "similitudes": [
+        0.4590748,
+        0.43729445,
+        0.43413827,
+        0.42009404,
+        0.4187714
+      ]
+    },
+    {
+      "id": "q-sec-investigacion",
+      "ids": [],
+      "similitudes": []
+    },
+    {
+      "id": "q-sec-completa",
+      "ids": [],
+      "similitudes": []
+    },
+    {
+      "id": "q-fed-completa",
+      "ids": [
+        "dc9d509a-2626-89dc-a2b8-5e6221968f09",
+        "bb4698d5-7422-8198-bfa4-a379f6fd9908",
+        "0cdae363-2540-85eb-84b5-b4fbda6c567b",
+        "def75e6d-dffc-8425-af9d-a4e770f70b9d",
+        "c8edc907-c9e7-81de-ad66-bcfd5de0b22c"
+      ],
+      "similitudes": [
+        0.5535098,
+        0.5305686,
+        0.5305686,
+        0.5305686,
+        0.5305686
+      ]
+    },
+    {
+      "id": "q-fed-corta",
+      "ids": [
+        "bb4698d5-7422-8198-bfa4-a379f6fd9908",
+        "0cdae363-2540-85eb-84b5-b4fbda6c567b",
+        "def75e6d-dffc-8425-af9d-a4e770f70b9d",
+        "c8edc907-c9e7-81de-ad66-bcfd5de0b22c",
+        "dc9d509a-2626-89dc-a2b8-5e6221968f09"
+      ],
+      "similitudes": [
+        0.63037163,
+        0.63037163,
+        0.63037163,
+        0.63037163,
+        0.55415636
+      ]
+    }
+  ]
+}

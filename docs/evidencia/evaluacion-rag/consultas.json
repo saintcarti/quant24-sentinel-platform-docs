@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "nota": "Set fijo de evaluación del RAG (RNF-28): se ejecuta al cambiar troceado, modelo de embeddings o ranking. Dos modos sobre el MISMO set: (1) CI ([ruta interna]) — corpus de prueba con dobles; `relevantes` son ETIQUETAS simbólicas que el fixture resuelve a ids reales del corpus de prueba. (2) Preview ([ruta interna]) — corre contra la API real y compara con la corrida dorada (dorada.json, versionada junto al índice); en ese modo `relevantes` no se usa. Al cambiar el ranking/troceado/modelo: regenerar la dorada con --actualizar y revisar el diff ANTES de versionarla.",
+  "consultas": [
+    {
+      "id": "q-hack-completa",
+      "consulta": "Hackeo de un exchange de criptomonedas deja millones en fondos robados",
+      "filtros": {},
+      "top_k": 5,
+      "relevantes": ["hackeo-exchange"]
+    },
+    {
+      "id": "q-hack-corta",
+      "consulta": "Hackeo de un exchange de criptomonedas",
+      "filtros": {},
+      "top_k": 5,
+      "relevantes": ["hackeo-exchange"]
+    },
+    {
+      "id": "q-sec-investigacion",
+      "consulta": "Investigación de la SEC sobre stablecoins",
+      "filtros": { "min_level": "high" },
+      "top_k": 5,
+      "relevantes": ["sec-stablecoins"]
+    },
+    {
+      "id": "q-sec-completa",
+      "consulta": "Investigación de la SEC sobre stablecoins abre nuevas multas",
+      "filtros": { "min_level": "high" },
+      "top_k": 5,
+      "relevantes": ["sec-stablecoins"]
+    },
+    {
+      "id": "q-fed-completa",
+      "consulta": "Decisión de tasas de la Fed y liquidez del mercado",
+      "filtros": { "categories": ["monetary_policy"] },
+      "top_k": 5,
+      "relevantes": ["fed-tasas"]
+    },
+    {
+      "id": "q-fed-corta",
+      "consulta": "Decisión de tasas de la Fed",
+      "filtros": { "categories": ["monetary_policy"] },
+      "top_k": 5,
+      "relevantes": ["fed-tasas"]
+    }
+  ]
+}
